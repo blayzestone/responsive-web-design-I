@@ -32,9 +32,10 @@ nav a:hover {
 	color: #DAA520;
 }
 
+
+
 header {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	border-bottom: solid black 1px;
@@ -113,4 +114,27 @@ small {
 	display: block;
 	text-align: center;
 	margin: 5% 0 10%;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Tablet */
+@media (max-width: 800px) {
+  nav {
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+  }
+
+  .logo {
+    margin: 1rem 20rem 1.5rem;
+  }
+
+  header {
+    margin-top: 15%;
+  }
+
+  header > img {
+    display: none;
+  }
 }
